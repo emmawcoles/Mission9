@@ -41,6 +41,7 @@
   color: #888;
 }
 
+/* Team Card Styles */
 .team-card {
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -52,10 +53,12 @@
   text-align: center;
 }
 
+/* Team Card Headings */
 .team-card h2 {
   margin-top: 0;
 }
 
+/* Card Container styles */
 .card-container {
   display: flex;
   flex-wrap: wrap;

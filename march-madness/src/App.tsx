@@ -1,6 +1,9 @@
 import './App.css'
+
+// Importing the JSON data for college basketball teams
 import teams from './CollegeBasketballTeams.json'
 
+// Heading component to display the title and description of the website
 function Heading() {
   return (
   <>
@@ -11,6 +14,7 @@ function Heading() {
   )
 }
 
+// Team component to display individual team information
 function Team({
   school,
   name,
@@ -22,6 +26,8 @@ function Team({
   city: string
   state: string
 }) {
+
+  // Rendering the team information in a card format
   return (
     <div className="team-card">
       <h2>{school}</h2>
@@ -31,6 +37,7 @@ function Team({
   )
 }
 
+//  TeamList component to iterate through the teams and render a Team component for each team in the JSON data
 function TeamList() {
   return (
     <div className="card-container">
@@ -41,6 +48,7 @@ function TeamList() {
   )
 }
 
+// Main App component to render the Heading and TeamList components
 function App() {
   return (
     <>
@@ -50,4 +58,5 @@ function App() {
   )
 }
 
+// Exporting the App component as the default export of this module
 export default App
